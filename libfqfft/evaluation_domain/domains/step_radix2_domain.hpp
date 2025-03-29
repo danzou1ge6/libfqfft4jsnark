@@ -28,6 +28,9 @@ public:
     FieldT omega;
     FieldT big_omega;
     FieldT small_omega;
+    std::string type_name() const override {
+        return "step_radix2";
+    };
 
     step_radix2_domain(const size_t m);
 

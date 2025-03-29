@@ -27,6 +27,10 @@ public:
     FieldT omega;
     FieldT shift;
 
+    std::string type_name() const override {
+        return "extended_radix2";
+    };
+
     extended_radix2_domain(const size_t m);
 
     void FFT(std::vector<FieldT> &a);

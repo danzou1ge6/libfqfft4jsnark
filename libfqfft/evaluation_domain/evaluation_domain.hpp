@@ -38,6 +38,7 @@ class evaluation_domain {
 public:
 
     const size_t m;
+    virtual std::string type_name() const = 0;
 
     /**
      * Construct an evaluation domain S of size m, if possible.

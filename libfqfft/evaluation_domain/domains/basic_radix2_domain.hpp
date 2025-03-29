@@ -26,6 +26,10 @@ public:
 
     FieldT omega;
 
+    std::string type_name() const override {
+        return "basic_radix2";
+    };
+
     basic_radix2_domain(const size_t m);
 
     void FFT(std::vector<FieldT> &a);

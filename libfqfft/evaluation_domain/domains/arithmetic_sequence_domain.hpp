@@ -28,6 +28,10 @@ namespace libfqfft {
     FieldT arithmetic_generator;
     void do_precomputation();
 
+    std::string type_name() const override {
+      return "arithmetic_sequence";
+    };
+
     arithmetic_sequence_domain(const size_t m);
 
     void FFT(std::vector<FieldT> &a);

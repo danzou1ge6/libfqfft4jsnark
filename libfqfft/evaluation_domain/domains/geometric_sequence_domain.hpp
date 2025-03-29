@@ -27,6 +27,10 @@ namespace libfqfft {
     std::vector<FieldT> geometric_triangular_sequence;
     void do_precomputation();
 
+    std::string type_name() const override {
+      return "geometric_sequence";
+    };
+
     geometric_sequence_domain(const size_t m);
 
     void FFT(std::vector<FieldT> &a);
